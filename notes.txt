@@ -17,5 +17,3 @@ mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="pd
 ==========Youtube URL to integrate git in Eclipse==================
 
 https://www.youtube.com/watch?v=gO20QGT6aW8
-
-===========Dummy Data===========
