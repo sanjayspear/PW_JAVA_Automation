@@ -1,0 +1,19 @@
+1. Command to generate code:
+
+mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args=codegen "letcode.in"
+
+2. Command to generate pdf of any give website:
+
+mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="pdf https://amazon.in amazon.pdf"
+
+=============List of websites to practice automation===============
+
+1. https://letcode.in/
+2. https://ecommerce-playground.lambdatest.io/index.php?
+3. https://rahulshettyacademy.com/seleniumPractise/#/
+4. https://rahulshettyacademy.com/AutomationPractice/
+5. https://rahulshettyacademy.com/angularpractice/
+
+==========Youtube URL to integrate git in Eclipse==================
+
+https://www.youtube.com/watch?v=gO20QGT6aW8
