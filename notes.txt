@@ -13,6 +13,7 @@ mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="pd
 3. https://rahulshettyacademy.com/seleniumPractise/#/
 4. https://rahulshettyacademy.com/AutomationPractice/
 5. https://rahulshettyacademy.com/angularpractice/
+6. https://naveenautomationlabs.com/opencart/
 
 ==========Youtube URL to integrate git in Eclipse==================
 
