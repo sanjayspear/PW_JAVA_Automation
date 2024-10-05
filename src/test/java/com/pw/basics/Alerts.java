@@ -1,4 +1,4 @@
-package day6;
+package com.pw.basics;
 
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.BrowserType.LaunchOptions;

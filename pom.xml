@@ -8,8 +8,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>18</maven.compiler.source>
-		<maven.compiler.source>18</maven.compiler.source>
+		<maven.compiler.source>21</maven.compiler.source>
+		<maven.compiler.source>21</maven.compiler.source>
 
 	</properties>
 	<dependencies>
@@ -18,6 +18,15 @@
 			<artifactId>playwright</artifactId>
 			<version>1.47.0</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.7.1</version>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<plugins>
@@ -28,8 +37,8 @@
 				<!-- References to interface static methods are allowed only at
 				source level 1.8 or above -->
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>21</source>
+					<target>21</target>
 				</configuration>
 			</plugin>
 		</plugins>

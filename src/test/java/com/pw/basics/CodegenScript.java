@@ -1,4 +1,4 @@
-package day5;
+package com.pw.basics;
 
 import com.microsoft.playwright.*;
 import com.microsoft.playwright.options.*;

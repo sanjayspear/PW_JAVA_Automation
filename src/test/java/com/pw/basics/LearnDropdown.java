@@ -1,4 +1,4 @@
-package day4;
+package com.pw.basics;
 
 import java.util.List;
 

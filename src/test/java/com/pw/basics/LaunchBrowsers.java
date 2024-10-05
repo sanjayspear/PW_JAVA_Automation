@@ -1,4 +1,4 @@
-package day2;
+package com.pw.basics;
 
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType;
