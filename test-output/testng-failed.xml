@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Open Cart Test Regression PW Suite]" verbose="4">
-  <test thread-count="5" name="Open Cart Home Page Test(failed)" verbose="4">
+<suite thread-count="2" parallel="tests" name="Failed suite [Open Cart Test Regression PW Suite]" verbose="4">
+  <test thread-count="2" parallel="tests" name="Open Cart Home Page Test(failed)" verbose="4">
     <classes>
       <class name="com.qa.opencart.tests.HomePageTest">
         <methods>
-          <include name="searchResultTest"/>
+          <include name="searchResultTest" invocation-numbers="1"/>
           <include name="setUp"/>
-          <include name="homePageUrlTest"/>
-          <include name="homePageTitleTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.opencart.tests.HomePageTest -->
     </classes>
   </test> <!-- Open Cart Home Page Test(failed) -->
+  <test thread-count="2" parallel="tests" name="Open Cart Login Page Test(failed)" verbose="4">
+    <classes>
+      <class name="com.qa.opencart.tests.LoginPageTest">
+        <methods>
+          <include name="forgotPwdLinkExistTest"/>
+          <include name="setUp"/>
+          <include name="appLoginTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Open Cart Login Page Test(failed) -->
 </suite> <!-- Failed suite [Open Cart Test Regression PW Suite] -->

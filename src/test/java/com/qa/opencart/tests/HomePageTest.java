@@ -18,7 +18,7 @@ public class HomePageTest extends BaseTest {
         String actualTitle = hm.getPageTitle();
         
         // Assert that the title matches the expected value
-        Assert.assertEquals(actualTitle, AppConstants.LOGIN_PAGE_TITLE);
+        Assert.assertEquals(actualTitle, AppConstants.HOME_PAGE_TITLE);
     }
 
     // This test checks if the home page URL is correct.

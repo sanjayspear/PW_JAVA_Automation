@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeTest;
 import com.microsoft.playwright.Page;
 import com.qa.opencart.factory.PlaywrightFactory;
 import com.qa.opencart.pages.HomePage;
+import com.qa.opencart.pages.LoginPage;
 
 public class BaseTest {
 	
@@ -19,6 +20,9 @@ public class BaseTest {
     protected Properties prop;
     // HomePage object to access HomePage specific methods
     protected HomePage hm;
+    // LoginPage object to access LoginPage specific methods
+    protected LoginPage lp;
+
     
     
 	// This method runs before any test. It's used to set up the browser and initialize the HomePage object.
@@ -35,6 +39,7 @@ public class BaseTest {
         
         // Creating HomePage object to interact with the homepage
         hm = new HomePage(page);
+
     }
     
  // This method runs after all tests have completed. It closes the browser.
