@@ -1,40 +1,15 @@
 package com.qa.opencart.tests;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.microsoft.playwright.Page;
-import com.qa.opencart.factory.PlaywrightFactory;
-import com.qa.opencart.pages.HomePage;
+import com.qa.opencart.base.BaseTest;
+import com.qa.opencart.constants.AppConstants;
 
 // Good practices: Never assert inside the page class, make sure all your tests are independent.
 
-public class HomePageTest {
-
-    // PlaywrightFactory object to initialize the browser
-    PlaywrightFactory pf;
-    
-    // Page object to interact with browser pages
-    Page page;
-    
-    // HomePage object to access HomePage specific methods
-    HomePage hm;
-
-    // This method runs before any test. It's used to set up the browser and initialize the HomePage object.
-    @BeforeTest
-    public void setUp() {
-        // Initializing the PlaywrightFactory to handle browser setup
-        pf = new PlaywrightFactory();
-        
-        // Initializing browser (chromium in this case)
-        page = pf.initBrowser("chromium");
-        
-        // Creating HomePage object to interact with the homepage
-        hm = new HomePage(page);
-    }
+public class HomePageTest extends BaseTest {
 
     // This test checks if the home page title is correct.
     @Test
@@ -43,7 +18,7 @@ public class HomePageTest {
         String actualTitle = hm.getPageTitle();
         
         // Assert that the title matches the expected value
-        Assert.assertEquals(actualTitle, "Your Store");
+        Assert.assertEquals(actualTitle, AppConstants.LOGIN_PAGE_TITLE);
     }
 
     // This test checks if the home page URL is correct.
@@ -51,9 +26,9 @@ public class HomePageTest {
     public void homePageUrlTest() {
         // Fetch the URL from the HomePage
         String actualUrl = hm.getHomePageUrl();
-        
+        String expectedUrl = prop.getProperty("url").trim();
         // Assert that the URL matches the expected value
-        Assert.assertEquals(actualUrl, "https://naveenautomationlabs.com/opencart/");
+        Assert.assertEquals(actualUrl, expectedUrl);
     }
 
     // DataProvider method to supply different product names for the search test
@@ -73,10 +48,4 @@ public class HomePageTest {
         Assert.assertEquals(actualSearchHeader, "Search - " + productName);
     }
 
-    // This method runs after all tests have completed. It closes the browser.
-    @AfterTest
-    public void tearDown() {
-        // Closing the browser and cleaning up resources
-        page.context().browser().close();
-    }
 }
