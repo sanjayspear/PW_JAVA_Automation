@@ -1,0 +1,29 @@
+QUESTION: Is my understanding correct that when we update a Maven dependency, we may encounter project-level 
+		errors, and to resolve them, we can use goals like clean install, followed by updating the project?
+		
+
+ANSWER:
+
+Yes, your understanding is correct. When updating Maven dependencies, it's common to encounter errors at the project level. In such cases, performing the following steps helps to resolve these issues:
+
+	1. Run mvn clean install: This ensures that the project is rebuilt from scratch by cleaning out all previously 
+	   compiled files and reinstalling dependencies. It resolves potential issues caused by stale or missing files[5].
+
+	2. Update the project: In IDEs like Eclipse, you can then update the project to refresh the workspace and 
+	   synchronize it with the latest dependencies[1].
+
+This process generally resolves Maven-related dependency issues.
+
+
+Question: What happens when the latest version of Playwright is available on the official website but not updated
+          in the Maven repository?
+
+Answer: When the latest version of Playwright is available on the official website but not updated in the Maven 
+        repository, including that version as a dependency in your pom.xml can lead to project-level errors, such 
+        as missing artifacts or unresolved dependencies. To resolve this, you should:
+
+    1. Verify the latest version of Playwright in the Maven repository to ensure it is available.
+    2. If the version is not updated, you can either wait for it to be available in the Maven repository 
+       or manually add the necessary Playwright JAR files to your project.
+
+This issue commonly arises when Maven repositories do not reflect updates as quickly as the official project site
