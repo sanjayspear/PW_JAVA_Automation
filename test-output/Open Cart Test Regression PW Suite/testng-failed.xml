@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="tests" name="Failed suite [Open Cart Test Regression PW Suite]" verbose="4">
-  <test thread-count="2" parallel="tests" name="Open Cart Home Page Test(failed)" verbose="4">
-    <classes>
-      <class name="com.qa.opencart.tests.HomePageTest">
-        <methods>
-          <include name="searchResultTest"/>
-          <include name="setUp"/>
-          <include name="homePageUrlTest"/>
-          <include name="homePageTitleTest"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.qa.opencart.tests.HomePageTest -->
-    </classes>
-  </test> <!-- Open Cart Home Page Test(failed) -->
-  <test thread-count="2" parallel="tests" name="Open Cart Login Page Test(failed)" verbose="4">
+  <listeners>
+    <listener class-name="com.qa.opencart.listeners.ExtentReportListener"/>
+  </listeners>
+  <test parallel="tests" name="Open Cart Login Page Test(failed)">
     <classes>
       <class name="com.qa.opencart.tests.LoginPageTest">
         <methods>
-          <include name="forgotPwdLinkExistTest"/>
-          <include name="loginPageNavigatonTest"/>
-          <include name="setUp"/>
           <include name="appLoginTest"/>
+          <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.opencart.tests.LoginPageTest -->
