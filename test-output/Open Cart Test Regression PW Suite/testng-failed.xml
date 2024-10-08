@@ -5,8 +5,10 @@
     <classes>
       <class name="com.qa.opencart.tests.HomePageTest">
         <methods>
-          <include name="searchResultTest" invocation-numbers="1"/>
+          <include name="searchResultTest"/>
           <include name="setUp"/>
+          <include name="homePageUrlTest"/>
+          <include name="homePageTitleTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.opencart.tests.HomePageTest -->
@@ -17,6 +19,7 @@
       <class name="com.qa.opencart.tests.LoginPageTest">
         <methods>
           <include name="forgotPwdLinkExistTest"/>
+          <include name="loginPageNavigatonTest"/>
           <include name="setUp"/>
           <include name="appLoginTest"/>
           <include name="tearDown"/>
