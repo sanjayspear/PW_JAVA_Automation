@@ -1,86 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-14T09:02:53Z" name="Open Cart Test Regression PW Suite" finished-at="2024-10-14T09:03:08Z" duration-ms="15797">
+  <suite started-at="2024-10-17T10:20:20Z" name="Default suite" finished-at="2024-10-17T10:20:27Z" duration-ms="7404">
     <groups>
     </groups>
-    <test started-at="2024-10-14T09:02:53Z" name="Open Cart Login Page Test" finished-at="2024-10-14T09:03:00Z" duration-ms="7253">
-      <class name="com.qa.opencart.tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@72e5a8e]" started-at="2024-10-14T14:32:53Z" name="setUp" finished-at="2024-10-14T14:32:58Z" duration-ms="5568" status="PASS">
+    <test started-at="2024-10-17T10:20:20Z" name="Default test" finished-at="2024-10-17T10:20:27Z" duration-ms="7404">
+      <class name="com.pw.basics.ValidateElementColor">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pw.basics.ValidateElementColor@72cc7e6f]" started-at="2024-10-17T15:50:20Z" name="setUp" finished-at="2024-10-17T15:50:27Z" duration-ms="6983" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPageNavigatonTest()[pri:1, instance:com.qa.opencart.tests.LoginPageTest@72e5a8e]" started-at="2024-10-14T14:32:58Z" name="loginPageNavigatonTest" finished-at="2024-10-14T14:32:59Z" duration-ms="391" status="PASS">
+        <test-method signature="validateColor()[pri:0, instance:com.pw.basics.ValidateElementColor@72cc7e6f]" started-at="2024-10-17T15:50:27Z" name="validateColor" finished-at="2024-10-17T15:50:27Z" duration-ms="67" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPageNavigatonTest -->
-        <test-method signature="forgotPwdLinkExistTest()[pri:2, instance:com.qa.opencart.tests.LoginPageTest@72e5a8e]" started-at="2024-10-14T14:32:59Z" name="forgotPwdLinkExistTest" finished-at="2024-10-14T14:32:59Z" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- forgotPwdLinkExistTest -->
-        <test-method signature="appLoginTest()[pri:3, instance:com.qa.opencart.tests.LoginPageTest@72e5a8e]" started-at="2024-10-14T14:32:59Z" name="appLoginTest" finished-at="2024-10-14T14:32:59Z" duration-ms="370" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- appLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@72e5a8e]" started-at="2024-10-14T14:33:00Z" name="tearDown" finished-at="2024-10-14T14:33:00Z" duration-ms="342" status="PASS">
+        </test-method> <!-- validateColor -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pw.basics.ValidateElementColor@72cc7e6f]" started-at="2024-10-17T15:50:27Z" name="tearDown" finished-at="2024-10-17T15:50:27Z" duration-ms="336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.opencart.tests.LoginPageTest -->
-    </test> <!-- Open Cart Login Page Test -->
-    <test started-at="2024-10-14T09:02:53Z" name="Open Cart Home Page Test" finished-at="2024-10-14T09:03:08Z" duration-ms="15797">
-      <class name="com.qa.opencart.tests.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.opencart.tests.HomePageTest@36916eb0]" started-at="2024-10-14T14:32:53Z" name="setUp" finished-at="2024-10-14T14:33:05Z" duration-ms="12582" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="homePageTitleTest()[pri:0, instance:com.qa.opencart.tests.HomePageTest@36916eb0]" started-at="2024-10-14T14:33:05Z" name="homePageTitleTest" finished-at="2024-10-14T14:33:05Z" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homePageTitleTest -->
-        <test-method signature="homePageUrlTest()[pri:0, instance:com.qa.opencart.tests.HomePageTest@36916eb0]" started-at="2024-10-14T14:33:05Z" name="homePageUrlTest" finished-at="2024-10-14T14:33:05Z" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homePageUrlTest -->
-        <test-method signature="searchResultTest(java.lang.String)[pri:0, instance:com.qa.opencart.tests.HomePageTest@36916eb0]" started-at="2024-10-14T14:33:06Z" name="searchResultTest" data-provider="getProductData" finished-at="2024-10-14T14:33:06Z" duration-ms="641" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mackbook]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchResultTest -->
-        <test-method signature="searchResultTest(java.lang.String)[pri:0, instance:com.qa.opencart.tests.HomePageTest@36916eb0]" started-at="2024-10-14T14:33:06Z" name="searchResultTest" data-provider="getProductData" finished-at="2024-10-14T14:33:07Z" duration-ms="930" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[iMac]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchResultTest -->
-        <test-method signature="searchResultTest(java.lang.String)[pri:0, instance:com.qa.opencart.tests.HomePageTest@36916eb0]" started-at="2024-10-14T14:33:08Z" name="searchResultTest" data-provider="getProductData" finished-at="2024-10-14T14:33:08Z" duration-ms="359" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Samsung]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchResultTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.HomePageTest@36916eb0]" started-at="2024-10-14T14:33:08Z" name="tearDown" finished-at="2024-10-14T14:33:08Z" duration-ms="279" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.opencart.tests.HomePageTest -->
-    </test> <!-- Open Cart Home Page Test -->
-  </suite> <!-- Open Cart Test Regression PW Suite -->
+      </class> <!-- com.pw.basics.ValidateElementColor -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
