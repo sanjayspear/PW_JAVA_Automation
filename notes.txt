@@ -35,3 +35,7 @@ git reset --hard
 
 git commit --amend -m "New commit message"
 
+3. Once you've set the upstream branch, (i.e git push -u origin branch-name) you can perform 
+future pushes and pulls without having to specify the remote branch. For example:
+
+Instead of typing git push origin branch-name, you can simply use git push.
