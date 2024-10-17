@@ -26,7 +26,12 @@ Channel Name: Naveen AutmationLabs
 URL: https://www.youtube.com/playlist?list=PLFGoYjJG_fqrEjt35Z1jxrYk5JXWQa_-D
 
 ==========Git==========
-If you don’t care about your local changes and want to completely override them, you can reset your 
+1. If you don’t care about your local changes and want to completely override them, you can reset your 
 working directory:
 
 git reset --hard
+
+2. To change the commit message of your most recent commit
+
+git commit --amend -m "New commit message"
+
